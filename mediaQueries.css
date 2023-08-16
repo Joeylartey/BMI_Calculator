@@ -1,0 +1,406 @@
+/* Media Queries for Tablet screen */
+@media(max-width: 850px) {
+    .header {
+        /* border-radius: 0px 0px 35px 35px; */
+        /* background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%); */
+        width: 100%;
+        height: 640px;
+        margin-left: 0px;
+        padding-left: 39px;
+        padding-top: 32px;
+        /* position: relative;     */
+        
+    }
+
+    .header img {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-left: 350px;
+    }
+
+    .header h1 {
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 70.4px */
+        letter-spacing: -2.4px;
+        width: 350px;
+        height: 106px;
+        margin: 40px auto;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .header > p {
+        width: 686px;
+        text-align: center;
+    }
+
+    .bmi-calculator {
+        top: 354px;
+        left: 39px;
+        width: 686px;
+        margin-top: 40px;
+    }
+
+    .metric-radio-and-label {
+        margin-right: 224px;
+    }
+
+    inputs[type=text] {
+        width: 192px;
+        margin-right: 24px;
+    }
+    
+    .inputs-span {
+        width: 299px;
+    }
+
+    .welcome-or-bmi-result {
+        width: 622px;
+    }
+
+    #pattern-curved-line-left {
+        display: none;
+    }
+
+    .what-bmi-means {
+        margin-left: -42px;
+        margin-top: 280px;
+    }
+
+    .what-bmi-means > img {
+        height: 361px;
+        width: 411px;
+        margin-right: 75px;
+    }
+
+    .bmi-description {
+        width: 331px;
+        height: 331px;
+        margin-top: -50px;
+    }
+
+    .bmi-description > h3 {
+        font-size: 32px;
+        letter-spacing: -1.6px; 
+    }
+
+    .bmi-description > p {
+        margin-top: -10px;
+    }
+
+    .healthy-habits {
+        margin-right: 0px;
+        width: 100vw;
+        height: 503px;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 43px 60px 39px;
+    }
+
+    .healthy-habit {
+        display: flex;
+    }
+
+    .healthy-habit > img{
+        margin-right: 40px;
+    }
+
+    .limitations-of-bmi {
+        width: 686px;
+        margin-top: 96px;
+        margin-left: 40px;
+        margin-right: 40px;
+        /* height: 963px; */
+    }
+
+    .limitations-of-bmi > h3 {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        text-align: center;
+    }
+
+    .limitations-of-bmi > p {
+        text-align: center;
+        width: 686px; /*Used to be 686px */
+        height: 72px; /* Used to be 72px*/
+    }
+
+    .card {
+        width: 336px;
+        
+    }
+
+    .card > p {
+        width: 272px;
+        height: 120px
+    }
+
+    .gender {
+        left: 0px;
+        top: 185px;
+    }
+
+    .age {
+        left: 351px;
+        top: 185px;
+    }
+
+    .muscle {
+        left: 0px;
+        top: 500px;
+    }
+
+    .pregnancy {
+        left: 351px;
+        top: 500px;
+    }
+
+    .race {
+        left: 198px;
+        top: 820px;
+    }
+
+    .curved-line-right {
+        display: none;
+    }
+}
+
+
+/* Media Query For Mobile Screens */
+@media(max-width: 500px) {
+    .header {
+        width: 100vw;
+        height: 640px;
+        margin-left: 0px;
+        padding-left: 24px;
+        padding-top: 32px;
+    }
+    
+    .header img {
+        text-align: center;
+        margin-left: 168px;
+    }
+
+    .header h1 {
+        text-align: center;
+        font-size: 48px;
+        letter-spacing: -2.4px;
+        width: 327px;
+        height: 159px;
+        margin-top: 24px;
+    }
+
+    .header > p {
+        width: 327px;
+        height: 144px;
+        margin-top: 24px;
+        text-align: center;
+
+        /* Body M */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+
+    .bmi-calculator {
+        top: 450px;
+        left: 24px;
+        width: 328px;
+        height: auto;
+    }
+
+    .radio-buttons {
+        width: 280px;
+        margin: 24px 0 24px 0;
+    }
+
+    .metric-radio-and-label {
+        margin-right: 53px;
+    }
+
+    .metric-inputs {
+        flex-direction: column;
+    }
+
+    input[type=text] {
+        width: 173px;
+        margin-right: 24px;
+    }
+
+    .inputs-span {
+        width: 270px;
+    }
+
+    .welcome-or-bmi-result {
+        width: 275px; /* Some minor changes here*/
+        height: 257px;
+        border-radius: 16px;
+        margin-top: 24px;
+    }
+
+    /* .welcome-screen > h4 {
+        margin-top: 30px;
+    } */
+
+    .welcome-screen > p{
+        width: 200px;
+        text-align: left;
+    }
+
+    .bmi-result {
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bmi-result-value {
+        width: 100px;
+    }
+
+    .bmi-result-value > h3 {
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 52.8px */
+        letter-spacing: -2.4px;
+    }
+
+    .bmi-result-desc {
+        width: 216px;
+    }
+
+   #height-feet {
+        width: 40px;
+   }
+
+   #height-inches {
+        width: 40px;
+   }
+
+   #weight-stone {
+        width: 40px;
+   }
+
+   #weight-pounds {
+        width: 40px;
+   }
+
+   .imperial-height > .inputs-span, .imperial-weight > .inputs-span {
+        margin-right: 16px;
+   }
+
+   #pattern-curved-line-left {
+        display: none;
+   }
+
+   .what-bmi-means {
+        margin-left: 0px;
+        margin-top: 600px;
+        flex-wrap: wrap;
+        flex-direction: column;
+   }
+
+   .what-bmi-means > img {
+        width: 100%;
+        height: 354px;
+        margin-left: 0px;
+   }
+
+   .bmi-description {
+        margin-top: 10px;
+        margin-left: 24px !important;
+        transform: translate(-50px);
+   }
+
+   .bmi-description > h3 {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+   }
+
+   .healthy-habits {
+        margin-top: 72px;
+        width: 100%;
+        height: 879px;
+        flex-direction: column;
+        padding: 56px 29px 56px 19px;
+   }
+
+   .healthy-habit {
+        flex-direction: column;
+        margin-bottom: 40px;
+   } 
+
+   .healthy-habit > img {
+        width: 64px;
+        height: 64px;
+   }
+
+   .habit-desc > p {
+        width: 327px;
+        height: 72px;
+    }
+
+   .limitations-of-bmi {
+        width: 327px;
+        height: auto;
+        margin: 72px auto;
+        /* margin-left: 20px;
+        margin-right: 29px; */
+   }
+
+   .limitations-of-bmi > h3 {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        text-align: center;
+   }
+
+   .limitations-of-bmi > p {
+        width: 327px;
+        height: 144px;
+   }
+
+   .card {
+        width: 327px;
+        padding: 24px;
+   }
+
+   .card > p {
+        width: 279px;
+   }
+
+   .gender {
+        top: 260px;
+        left: 0px;
+   }
+
+   .age {
+        top: 550px;
+        left: 0px;
+   }
+
+   .muscle {
+        top: 840px;
+        left: 0px;
+   }
+
+   .pregnancy {
+        top: 1130px;
+        left: 0px;
+   }
+
+   .race {
+        top: 1420px;
+        left: 0px;
+   }
+
+   .curved-line-right {
+    display: none;
+   }
+}

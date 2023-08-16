@@ -19,6 +19,8 @@ body {
     font-family: Inter;
     margin: 0;
     padding: 0;
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
 }
 
 .header {
@@ -52,7 +54,7 @@ body {
     margin-top: 127px;
 }
 
-.header p {
+.header > p {
     width: 465px;
     color: var(--dark-electric-blue);
 
@@ -73,7 +75,7 @@ body {
     display: flex;
     width: 564px;
     height: auto; /*-- Will have to change it to 448px */
-    padding: 32px;
+    padding: 32px !important;
     flex-direction: column;
     /* align-items: flex-start; */
     /* gap: 32px; */
@@ -98,7 +100,7 @@ body {
 }
 
 .radio-buttons {
-    width: 500px;
+    /* width: auto; */
     height: 31px;
     display: flex;
 
@@ -106,21 +108,53 @@ body {
     /* justify-content: space-between; */
 }
 
-input[type=radio] {
+/* Don't really think this one is needed */
+/* input:hover {
+    color: var(--blue);
+}  */
+
+.radio-buttons input[type=radio] {
+    appearance: none;
     width: 31px;
     height: 31px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #D8E2E7;
 }
 
-.metric-input-and-label, .imperial-input-and-label {
+.radio-buttons input[type=radio]:hover {
+    border: 1px solid #345FF6;
+}
+
+.radio-buttons input[type=radio]:checked {
+    width: 15px;
+    height: 15px;
+    background: #345FF6;
+    border: 1px solid #345FF6;
+    box-shadow: 0 0 0 8px  rgba(52, 95, 246, 0.15);
+    /* transform: translate(-8px); */
+}
+
+.imperial-radio:checked {
+    width: 15px;
+    height: 15px;
+    background: #345FF6;
+    border: 1px solid #345FF6;
+    box-shadow: 0 0 0 8px  rgba(52, 95, 246, 0.15);
+    transform: translate(-8px);
+}
+
+.metric-radio-and-label, .imperial-radio-and-label {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
     align-items: center;
 }
 
-.metric-input-and-label {
-    margin-right: 153px;
+.metric-radio-and-label {
+    margin-right: 170px;
 }
+
 .metric-label, .imperial-label {
     margin-left: 18px;
     color: var(--gunmetal);
@@ -133,11 +167,8 @@ input[type=radio] {
     line-height: 150%; /* 24px */
 }
 
-.height-and-weight {
+.metric-inputs {
     display: flex;
-    /* border: 3px solid red; */
-
-    /* align-items: flex-start; */
     gap: 24px;
     align-self: stretch;
 }
@@ -146,10 +177,6 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
 }
-
-/* .height {
-    margin-right: 75px;
-} */
 
 .height label, .weight label {
     color: #5E6E85;
@@ -161,10 +188,23 @@ input[type=radio] {
     font-weight: 400;
     line-height: 150%; /* 21px */
 }
+
+.imperial-inputs label {
+    color: #5E6E85;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
 input[type=text] {
     width: 131px;
     height: 29px;
     margin-right: 20px;
+    border: none;
+    outline: none;
+
     /* border: 3px solid red; */
    
     color: var(--gunmetal);
@@ -175,18 +215,21 @@ input[type=text] {
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.2px;
-    border: transparent;
+   
 }
 
-span {
+.inputs-span {
     color: var(--blue);
     /* Heading M */
     font-family: Inter;
+
+    /* The font styles here look unnecessary */
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.2px;
+
     width: 240px;
     height: 69px;
     padding: 20px 24px;
@@ -197,34 +240,25 @@ span {
     justify-content: center;
 }
 
-.bmi-value {
-   display: flex; 
-    /* padding: 32px; */
-    flex-direction: column;
+.inputs-span:hover {
+    border: 1px solid var(--blue);
+    cursor: pointer;
+}
+
+.welcome-or-bmi-result {
+    display: flex; 
+    padding: 30px;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* gap: 24px; */
 
     border-radius: 16px 999px 999px 16px;
     background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
     width: 500px;
-    height: 130px;
+    height: auto;
     margin-top: 32px;
 }
-
-.bmi-value > h4 {
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -1.2px;
-    color: var(--white);
-}
-.welcome-screen {
-     padding: 32px;
-     margin-left: 10px;
-} 
 
 .welcome-screen > h4 {
     font-family: Inter;
@@ -247,27 +281,73 @@ span {
     line-height: 150%; /* 21px */
     margin-top: -20px;
 }
+.bmi-result {
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmi-result-value {
+    width: 132px;
+    margin-right: 98px;
+}
+
+.bmi-result-desc {
+    margin-top: 25px;
+}
+
+.bmi-result-value > h3 {
+    color: var(--white);
+
+    /* Heading XL */
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 70.4px */
+    letter-spacing: -3.2px;
+}
+
+.bmi-result-desc {
+    width: 206px;
+    height: 84px;
+    color: var(--white);
+
+    /* Body S */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 150%;  */
+}
+
+#classification-values {
+    font-weight: 700;
+}
 
 .imperial-height, .imperial-weight {
     display: flex;
 }
 
-.imperial span {
+.imperial-inputs span {
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 50px;
     margin-bottom: 10px;
+
 }
 
 #pattern-curved-line-left {
-    float: right;
-    margin-right: 167px;
+    position: absolute;
+    top: 749px;
+    right: -298px;
+
     width: 85px;
     height: 200px;
-    display: none;
+    
 }
 
 .what-bmi-means {
-    margin-left: 140px;
+    margin-left: 100px;
     margin-top: 70px;
     /* margin-right: 140px; */
     display: flex;
@@ -282,7 +362,7 @@ span {
 }
 
 .bmi-description {
-    width: 465px !important;
+    width: 465px;
     height: 309px;
     display: flex;
     flex-direction: column;
@@ -312,7 +392,7 @@ span {
 
 .healthy-habits {
     margin-top: 96px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     width: 98vw;
     height: 402px; /* wanna use auto */
     border-radius: 35px;
@@ -351,9 +431,10 @@ span {
 
 .limitations-of-bmi {
     width: 1140px;
-    height: auto; /*Used to be 704px */
+    height: 704px; /*Used to be 704px */
     margin: 120px auto;
     position: relative;
+    margin-bottom: 300px; /* 300px okay */
 }
 
 .limitations-of-bmi > h3 {
@@ -379,6 +460,7 @@ span {
     line-height: 150%; /* 24px */
     width: 564px;
     height: 96px;
+
 }
 
 .card {
@@ -386,7 +468,8 @@ span {
     /* height: auto; */
     padding: 32px;
     border-radius: 16px;
-    background: var(-white);
+    background: var(--white); /* used to be white */
+    opacity: 23;
     box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
     z-index: 99;
 }
@@ -409,7 +492,7 @@ span {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    /* letter-spacing: -1px; */
+    letter-spacing: -1px;
 }
 
 .card > p {
@@ -459,3 +542,9 @@ span {
     left: 165px;
     top: 251px;
 }
+
+.hide {
+    display: none;
+ }
+
+ /* Media Queries */
