@@ -19,24 +19,24 @@ body {
     font-family: Inter;
     margin: 0;
     padding: 0;
-    /* margin-bottom: 30px; */
-    padding-bottom: 30px;
+    /* margin-bottom: 1.875rem; */
+    padding-bottom: 1.875rem;
 }
 
 .header {
-    border-radius: 0px 0px 35px 35px;
+    border-radius: 0rem 0rem 2.1875rem 2.1875rem;
     background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
-    width: 978px;
-    height: 737px;
-    margin-left: 24px;
-    padding-left: 116px;
-    padding-top: 75px;
+    width: 61.125rem;
+    height: 46.0625rem;
+    margin-left: 1.5rem;
+    padding-left: 7.25rem;
+    padding-top: 4.6875rem;
     position: relative;
 }
 
 .header img {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .header h1 {
@@ -44,45 +44,46 @@ body {
 
     /* Heading XL */
     font-family: Inter;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 70.4px */
-    letter-spacing: -3.2px;
-    width: 475px;
-    height: 140px;
-    margin-top: 127px;
+    line-height: 110%; /* 4.4rem */
+    letter-spacing: -0.2rem;
+    width: 29.6875rem;
+    height: 8.75rem;
+    margin-top: 7.9375rem;
 }
 
 .header > p {
-    width: 465px;
+    width: 29.0625rem;
     color: var(--dark-electric-blue);
 
 /* Body M */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; /* 1.5rem */
 }
 
 .bmi-calculator {
     position: absolute;
-    top: 167px;
-    left: 712px;
+    top: 10.4375rem;
+    left: 44.5rem;
     z-index: 999;
 
     display: flex;
-    width: 564px;
-    height: auto; /*-- Will have to change it to 448px */
-    padding: 32px !important;
+    width: 35.25rem;
+    height: auto; /*-- Will have to change it to 28rem */
+    padding: 2rem !important;
     flex-direction: column;
     /* align-items: flex-start; */
-    /* gap: 32px; */
+    /* gap: 2rem; */
 
-    border-radius: 16px;
+    border-radius: 1rem;
     background: var(--white);
-    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    box-shadow: 1rem 2rem 3.5rem 0rem rgba(143, 174, 207, 0.25);
+    
 }
 
 .bmi-calculator h3 {
@@ -90,21 +91,21 @@ body {
 
 /* Heading M */
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1.2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    letter-spacing: -0.075rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .radio-buttons {
     /* width: auto; */
-    height: 31px;
+    height: 1.9375rem;
     display: flex;
 
-    margin: 35px 0 32px 0;
+    margin: 2.1875rem 0 2rem 0;
     /* justify-content: space-between; */
 }
 
@@ -115,33 +116,33 @@ body {
 
 .radio-buttons input[type=radio] {
     appearance: none;
-    width: 31px;
-    height: 31px;
+    width: 1.9375rem;
+    height: 1.9375rem;
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #D8E2E7;
+    border: 0.0625rem solid #D8E2E7;
 }
 
 .radio-buttons input[type=radio]:hover {
-    border: 1px solid #345FF6;
+    border: 0.0625rem solid #345FF6;
 }
 
 .radio-buttons input[type=radio]:checked {
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     background: #345FF6;
-    border: 1px solid #345FF6;
-    box-shadow: 0 0 0 8px  rgba(52, 95, 246, 0.15);
-    /* transform: translate(-8px); */
+    border: 0.0625rem solid #345FF6;
+    box-shadow: 0 0 0 0.5rem  rgba(52, 95, 246, 0.15);
+    /* transform: translate(-0.5rem); */
 }
 
 .imperial-radio:checked {
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     background: #345FF6;
-    border: 1px solid #345FF6;
-    box-shadow: 0 0 0 8px  rgba(52, 95, 246, 0.15);
-    transform: translate(-8px);
+    border: 0.0625rem solid #345FF6;
+    box-shadow: 0 0 0 0.5rem  rgba(52, 95, 246, 0.15);
+    transform: translate(-0.5rem);
 }
 
 .metric-radio-and-label, .imperial-radio-and-label {
@@ -152,24 +153,24 @@ body {
 }
 
 .metric-radio-and-label {
-    margin-right: 170px;
+    margin-right: 10.625rem;
 }
 
 .metric-label, .imperial-label {
-    margin-left: 18px;
+    margin-left: 1.125rem;
     color: var(--gunmetal);
 
     /* Body M (Bold) */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    line-height: 150%; /* 1.5rem */
 }
 
 .metric-inputs {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
     align-self: stretch;
 }
 
@@ -183,38 +184,38 @@ body {
 
     /* Body S */
     font-family: Inter;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
+    line-height: 150%; /* 1.3125rem */
 }
 
 .imperial-inputs label {
     color: #5E6E85;
     font-family: Inter;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
 }
 
 input[type=text] {
-    width: 131px;
-    height: 29px;
-    margin-right: 20px;
+    width: 8.1875rem;
+    height: 1.8125rem;
+    margin-right: 1.25rem;
     border: none;
     outline: none;
 
-    /* border: 3px solid red; */
+    /* border: 0.1875rem solid red; */
    
     color: var(--gunmetal);
     /* Heading M */
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.075rem;
    
 }
 
@@ -224,64 +225,64 @@ input[type=text] {
     font-family: Inter;
 
     /* The font styles here look unnecessary */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.075rem;
 
-    width: 240px;
-    height: 69px;
-    padding: 20px 24px;
-    border-radius: 12px;
-    border: 1px solid #D8E2E7;
+    width: 15rem;
+    height: 4.3125rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid #D8E2E7;
 
     display: flex;
     justify-content: center;
 }
 
 .inputs-span:hover {
-    border: 1px solid var(--blue);
+    border: 0.0625rem solid var(--blue);
     cursor: pointer;
 }
 
 .welcome-or-bmi-result {
     display: flex; 
-    padding: 30px;
+    padding: 1.875rem;
     /* flex-direction: column;
     justify-content: center;
     align-items: center; */
-    /* gap: 24px; */
+    /* gap: 1.5rem; */
 
-    border-radius: 16px 999px 999px 16px;
+    border-radius: 1rem 62.4375rem 62.4375rem 1rem;
     background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
-    width: 510px;
+    width: 31.875rem;
     height: auto;
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 
 .welcome-screen > h4 {
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.075rem;
     color: var(--white);
-    margin-top: 5px;
-    padding-top: 10px;
+    margin-top: 0.3125rem;
+    padding-top: 0.625rem;
 }
 
 .welcome-screen > p {
     color: var(--white);
     /* Body S */
     font-family: Inter;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
-    margin-top: -20px;
-    width: 480px;
+    line-height: 150%; /* 1.3125rem */
+    margin-top: -1.25rem;
+    width: 30rem;
 }
 
 .bmi-result {
@@ -291,12 +292,12 @@ input[type=text] {
 }
 
 .bmi-result-value {
-    width: 132px;
-    margin-right: 98px;
+    width: 8.25rem;
+    margin-right: 6.125rem;
 }
 
 .bmi-result-desc {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 
 .bmi-result-value > h3 {
@@ -304,21 +305,21 @@ input[type=text] {
 
     /* Heading XL */
     font-family: Inter;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 70.4px */
-    letter-spacing: -3.2px;
+    line-height: 110%; /* 4.4rem */
+    letter-spacing: -0.2rem;
 }
 
 .bmi-result-desc {
-    width: 206px;
-    height: 84px;
+    width: 12.875rem;
+    height: 5.25rem;
     color: var(--white);
 
     /* Body S */
     font-family: Inter;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     /* line-height: 150%;  */
@@ -333,40 +334,40 @@ input[type=text] {
 }
 
 .imperial-inputs span {
-    margin-top: 10px;
-    margin-right: 50px;
-    margin-bottom: 10px;
+    margin-top: 0.625rem;
+    margin-right: 3.125rem;
+    margin-bottom: 0.625rem;
 
 }
 
 #pattern-curved-line-left {
     position: absolute;
-    top: 749px;
-    right: -298px;
+    top: 46.8125rem;
+    right: -18.625rem;
 
-    width: 85px;
-    height: 200px;
+    width: 5.3125rem;
+    height: 12.5rem;
     
 }
 
 .what-bmi-means {
-    margin-left: 100px;
-    margin-top: 70px;
-    /* margin-right: 140px; */
+    margin-left: 6.25rem;
+    margin-top: 4.375rem;
+    /* margin-right: 8.75rem; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .what-bmi-means > img{
-    width: 564px;
-    height: 533px;
-    margin-right: 131px;
+    width: 35.25rem;
+    height: 33.3125rem;
+    margin-right: 8.1875rem;
 }
 
 .bmi-description {
-    width: 465px;
-    height: 309px;
+    width: 29.0625rem;
+    height: 19.3125rem;
     display: flex;
     flex-direction: column;
     
@@ -376,36 +377,36 @@ input[type=text] {
     color: var(--gunmetal);
     /* Heading L */
     font-family: Inter;
-    font-size: 48px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 52.8px */
-    letter-spacing: -2.4px;
+    line-height: 110%; /* 3.3rem */
+    letter-spacing: -0.15rem;
 }
 
 .bmi-description > p {
     color: var(--dark-electric-blue);
     /* Body M */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; /* 1.5rem */
 }
 
 .healthy-habits {
-    margin-top: 96px;
-    /* margin-right: 24px; */
+    margin-top: 6rem;
+    /* margin-right: 1.5rem; */
     width: 98vw;
-    height: 402px; /* wanna use auto */
-    border-radius: 35px;
+    height: 25.125rem; /* wanna use auto */
+    border-radius: 2.1875rem;
     /* opacity: 0.25; */
     background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
-    padding: 72px 117px 96px 117px;
+    padding: 4.5rem 7.3125rem 6rem 7.3125rem;
     display: flex;
 }
 .healthy-habit {
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 .healthy-habit > h3 {
@@ -413,11 +414,11 @@ input[type=text] {
 
     /* Heading M */
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.075rem;
 }
 
 .healthy-habit > p {
@@ -425,19 +426,19 @@ input[type=text] {
 
     /* Body M */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
-    width: 365px;
+    line-height: 150%; /* 1.5rem */
+    width: 22.8125rem;
 }
 
 .limitations-of-bmi {
-    width: 1140px;
-    height: 704px; /*Used to be 704px */
-    margin: 120px auto;
+    width: 71.25rem;
+    height: 44rem; /*Used to be 44rem */
+    margin: 7.5rem auto;
     position: relative;
-    margin-bottom: 300px; /* 300px okay */
+    margin-bottom: 18.75rem; /* 18.75rem okay */
 }
 
 .limitations-of-bmi > h3 {
@@ -445,11 +446,11 @@ input[type=text] {
 
     /* Heading L */
     font-family: Inter;
-    font-size: 48px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 52.8px */
-    letter-spacing: -2.4px;
+    line-height: 110%; /* 3.3rem */
+    letter-spacing: -0.15rem;
 }
 
 .limitations-of-bmi > p {
@@ -457,33 +458,33 @@ input[type=text] {
 
     /* Body M */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
-    width: 564px;
-    height: 96px;
+    line-height: 150%; /* 1.5rem */
+    width: 35.25rem;
+    height: 6rem;
 
 }
 
 .card {
-    width: 365px;
+    width: 22.8125rem;
     /* height: auto; */
-    padding: 32px;
-    border-radius: 16px;
+    padding: 2rem;
+    border-radius: 1rem;
     background: var(--white); /* used to be white */
     opacity: 23;
-    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    box-shadow: 1rem 2rem 3.5rem 0rem rgba(143, 174, 207, 0.25);
     z-index: 99;
 }
 
 .card-heading {
-    margin-top: 0px;
+    margin-top: 0rem;
     display: flex;
 }
 
 .card-heading > img {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .card-heading > h4 {
@@ -491,11 +492,11 @@ input[type=text] {
 
     /* Heading S */
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -1px;
+    letter-spacing: -0.0625rem;
 }
 
 .card > p {
@@ -503,51 +504,52 @@ input[type=text] {
 
     /* Body M */
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; /* 1.5rem */
 }
 
 .gender {
     position: absolute;
-    left: 696px;
-    top: 0px;
+    left: 43.5rem;
+    top: 0rem;
 }
 
 .age {
     position: absolute;
-    left: 398px;
-    top: 330px;
+    left: 24.875rem;
+    top: 20.625rem;
 }
 
 .muscle {
     position: absolute;
-    left: 795px;
-    top: 330px;
+    left: 49.6875rem;
+    top: 20.625rem;
 } 
 
 .pregnancy {
     position: absolute;
-    left: 199px;
-    top: 625px;
+    left: 12.4375rem;
+    top: 39.0625rem;
 }
 
 .race {
     position: absolute;
-    left: 596px;
-    top: 625px;
+    left: 37.25rem;
+    top: 39.0625rem;
     z-index: 999;
 }
 
 .curved-line-right {
     position: absolute;
-    left: 165px;
-    top: 251px;
+    left: 10.3125rem;
+    top: 15.6875rem;
 }
 
 .hide {
     display: none;
+    visibility: hidden;
  }
 
  /* Media Queries */
