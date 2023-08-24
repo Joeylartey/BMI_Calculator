@@ -1,6 +1,3 @@
-
-    // let numberRegex =  /^\s*[+-]?(\d+|\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)?\s*$/;
-    
     let metric = document.querySelector(".metric") as HTMLInputElement  ;
     let imperial = document.querySelector(".imperial") as HTMLInputElement;
 
