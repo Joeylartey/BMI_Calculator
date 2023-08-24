@@ -1,4 +1,3 @@
-
 let metric = document.querySelector(".metric");
 let imperial = document.querySelector(".imperial");
 let metricOption = document.querySelector(".MetricOption");
